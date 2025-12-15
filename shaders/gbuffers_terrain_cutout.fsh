@@ -19,7 +19,7 @@ varying vec4 color;
 flat varying int id;
 
 #ifdef WORLD_FOG
-#include "fog.glsl"
+#include "lib/fog.glsl"
 #endif
 
 void main() {

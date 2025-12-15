@@ -19,7 +19,7 @@ varying vec3 light;
 varying vec4 color;
 
 #ifdef WORLD_FOG
-#include "fog.glsl"
+#include "lib/fog.glsl"
 #endif
 
 void main() {

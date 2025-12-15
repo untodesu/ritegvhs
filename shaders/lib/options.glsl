@@ -1,0 +1,16 @@
+#ifndef OPTIONS_GLSL
+#define OPTIONS_GLSL
+
+#define VHS_CUTOFF 0.005 //[0.0 0.005]
+#define VHS_SATURATION 0.707 //[0.5 0.6 0.7 0.8 0.9 1.0]
+
+#define VHS_LUMA_XRES 0.333 //[0.333 0.666 1.0]
+#define VHS_CHROMA_XRES 0.040 //[0.040 0.080 0.150 0.333 0.666 1.0]
+#define VHS_BOTH_YRES 0.5 //[0.125 0.25 0.5 1.0]
+
+#define VHS_LUMA_NOISE 0.02 //[0.00 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.10]
+#define VHS_CHROMA_NOISE 0.01 //[0.00 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.10]
+
+#define VHS_SHARPEN 0.3 //[0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0]
+
+#endif // OPTIONS_GLSL

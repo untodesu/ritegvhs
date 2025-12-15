@@ -16,7 +16,7 @@ varying vec2 texcoord;
 varying vec4 color;
 
 #ifdef CLOUD_FOG
-#include "fog.glsl"
+#include "lib/fog.glsl"
 #endif
 
 void main() {

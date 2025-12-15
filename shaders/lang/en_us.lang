@@ -18,3 +18,16 @@ option.MIPMAP_TYPE.comment=Changing the Mipmap Type from "Accurate" to something
 value.MIPMAP_TYPE.0=Accurate
 value.MIPMAP_TYPE.1=Everything
 value.MIPMAP_TYPE.2=Only Solid
+
+screen.BASE_OPTS=Base-Shader options
+
+option.VHS_SATURATION=Saturation
+option.VHS_CUTOFF=Tape cutoff
+option.VHS_SHARPEN=Sharpen
+
+option.VHS_LUMA_XRES=Luminance resolution
+option.VHS_CHROMA_XRES=Chrominance resolution
+option.VHS_BOTH_YRES=Vertical resolution
+
+option.VHS_LUMA_NOISE=Luminance noise
+option.VHS_CHROMA_NOISE=Chrominance noise
