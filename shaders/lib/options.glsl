@@ -20,7 +20,7 @@
 //
 
 #define VHS_CUTOFF 0.005 //[0.0 0.005]
-#define VHS_SATURATION 0.707 //[0.5 0.6 0.7 0.8 0.9 1.0]
+#define VHS_SATURATION 0.6 //[0.5 0.6 0.7 0.8 0.9 1.0]
 
 #define VHS_LUMA_XRES 0.333 //[0.333 0.666 1.0]
 #define VHS_CHROMA_XRES 0.040 //[0.040 0.080 0.150 0.333 0.666 1.0]
