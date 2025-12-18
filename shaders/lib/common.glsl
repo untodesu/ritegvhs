@@ -7,8 +7,8 @@
 //  VHS Compression: https://www.shadertoy.com/view/tsfXWj
 //  NTSC Filter: https://www.shadertoy.com/view/wlScWG
 
-#ifndef COMMON_GLSL
-#define COMMON_GLSL
+#ifndef LIB_COMMON_GLSL
+#define LIB_COMMON_GLSL
 
 #define PI 3.14159265359
 #define RNG_SEED 1337U
@@ -44,4 +44,4 @@ float Common_randomFloat(inout uint state)
     return float(Common_wangHash(state)) / 4294967296.0;
 }
 
-#endif // COMMON_GLSL
+#endif // LIB_COMMON_GLSL

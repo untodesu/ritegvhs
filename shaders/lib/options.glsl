@@ -1,5 +1,23 @@
-#ifndef OPTIONS_GLSL
-#define OPTIONS_GLSL
+#ifndef LIB_OPTIONS_GLSL
+#define LIB_OPTIONS_GLSL
+
+//
+// Options from Base-Shader
+//
+
+#define GLINT_STRENGTH 0.75 // [0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00]
+#define MIPMAP_TYPE 0 // [0 1 2]
+
+#define BLOCK_LIGHT_BRIGHTNESS_FIX
+#define DIRECTIONAL_ENTITY_LIGHT
+#define DIRECTIONAL_BLOCK_LIGHT
+#define CLOUD_FOG
+#define WORLD_FOG
+#define SKY_FOG
+
+//
+// Options from ritegvhs
+//
 
 #define VHS_CUTOFF 0.005 //[0.0 0.005]
 #define VHS_SATURATION 0.707 //[0.5 0.6 0.7 0.8 0.9 1.0]
@@ -13,4 +31,4 @@
 
 #define VHS_SHARPEN 0.3 //[0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0]
 
-#endif // OPTIONS_GLSL
+#endif // LIB_OPTIONS_GLSL

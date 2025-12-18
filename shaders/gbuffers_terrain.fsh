@@ -1,30 +1,32 @@
-#version 120
+#version 330 compatibility
 
-#define WORLD_FOG
+#include "lib/common.glsl"
+#include "lib/options.glsl"
 
 uniform sampler2D texture;
 
-uniform float viewWidth;
-uniform float viewHeight;
-
 uniform int fogShape;
-
-uniform mat4 gbufferProjectionInverse;
-uniform mat4 gbufferModelViewInverse;
+uniform vec3 fogColor;
+uniform vec3 skyColor;
 
 varying vec2 texcoord;
 varying vec4 color;
+
+uniform float near;
+uniform float far;
 
 #ifdef WORLD_FOG
 #include "lib/fog.glsl"
 #endif
 
-void main() {
-	vec4 albedo = texture2D(texture, texcoord) * color;
-	
-	#ifdef WORLD_FOG
-	albedo.rgb = mix(albedo.rgb, gl_Fog.color.rgb, getFogStrength(fogShape, gl_Fog.start, gl_Fog.end));
-	#endif
-	
-	gl_FragData[0] = albedo;
+void main(void)
+{
+    vec4 albedo = texture2D(texture, texcoord) * color;
+
+#ifdef WORLD_FOG
+    vec2 params = getFogParams(fogShape, near, far);
+    albedo.rgb = mix(albedo.rgb, mix(fogColor, skyColor, params.y), params.x);
+#endif
+
+    gl_FragData[0] = albedo;
 }
